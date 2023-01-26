@@ -10,6 +10,9 @@ particlesJS("particles-js", {
 		"color":{
 			"value":"#fff"
 		},
+		"backgroundColor":{
+			"value":"#707070"
+		},
 		"shape":{
 			"type":"image",//形状は画像を指定
 			"stroke":{
@@ -73,3 +76,4 @@ particlesJS("particles-js", {
 	},
 	"retina_detect":false
 });
+	
