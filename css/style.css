@@ -289,10 +289,12 @@ p.explain {
 }
 
 #gnav-open span::before {
+  content: '';
   bottom: -8px;
 }
 
 #gnav-open span::after {
+   content: '';
   bottom: -16px;
 }
 
@@ -385,6 +387,8 @@ p.explain {
   grid-template-rows: 800px;
   grid-gap: 80px;
   padding-top: 100px;
+  background: #F6F3EF;
+  position: relative;
 }
 .sub-area{
   display: flex;
@@ -416,14 +420,14 @@ p.explain {
   height: 100%;
   align-items: center;
   z-index: 100;
-  background: #F6F3EF;
-box-shadow:  20px 20px 60px #d1cfcb,
+ 
+  box-shadow:  20px 20px 60px #d1cfcb,
              -20px -20px 60px #ffffff;
 }
 
 .mv-sub {
  position: absolute;
-  top: 140px;
+  top: 100px;
   left: 0px;
   width: 50%;
   height: 35%;
@@ -436,7 +440,7 @@ box-shadow:  20px 20px 60px #d1cfcb,
 }
 .mv-sub2 {
   position: absolute;
-   top: 530px;
+   bottom: 0px;
    right: 0px;
    width:  50%;
    height: 35%;
