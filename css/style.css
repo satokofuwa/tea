@@ -233,7 +233,7 @@ h1 {
   /* font-family: HannariMincho; */
   font-family: aoyagireisyosimo_otf;
   font-weight: bold;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom:100px;
   z-index:10;
   
@@ -387,7 +387,8 @@ p.explain {
   grid-template-rows: 800px;
   grid-gap: 80px;
   padding-top: 100px;
-  background: #F6F3EF;
+  /* background: #F6F3EF; */
+  
   position: relative;
 }
 .sub-area{
@@ -412,6 +413,8 @@ p.explain {
   /* 外側の線と内側の線の空き具合を調整*/
   font-size: 40px;
   z-index: 100;
+  background-color:#F6F3EF;
+
 }
 
 .mv-main {
@@ -476,18 +479,12 @@ p.explain {
   }
   .mv-main{
     opacity: .7;
-    
-    
   }
   .mv-sub {
-  
     width: 100%;
-  
   } 
   .mv-sub2{
-   
     width: 100%;
-    
   }
   }
   /* 茶道とは */
@@ -502,14 +499,16 @@ p.explain {
   justify-content:center;
   align-items: center;
   }
-.about-img {
-  width: 400px;
+
+.about-window {
+  max-width: 400px;
+  max-height: 400px;
   margin-top: 100px;
 }
-
-.about-img img {
-  width: 100%;
-  height: auto;
+.about-window_img {
+  max-width: 400px;
+  max-height: 400px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
   #about {
@@ -523,6 +522,9 @@ p.explain {
   }
   p.explain {
    font-size: 16px;
+  }
+  .about-window_img {
+    max-width: 300px;
   }
 
 }
@@ -819,10 +821,10 @@ table,th,td {
   }
   .sweets-list {
     display: grid;
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 200px 200px;
     /*幅150pxの列が２列できた */
-    grid-template-rows: 100px 100px 100px ;
-    grid-gap: 20px;
+    grid-template-rows: 140px 140px 140px ;
+    grid-gap: 80px;
   }
 .table-container {
   display: grid;
