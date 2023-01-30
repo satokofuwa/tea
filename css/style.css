@@ -458,7 +458,6 @@ p.explain {
     height: 100%;
      display: flex;
      flex-direction: column;
-     justify-content: center;
      align-items: center;
   }
   
@@ -472,19 +471,23 @@ p.explain {
     font-size: 30px;
     margin:0;
     position:absolute;
+    background: #F6F3EF;
+    opacity: .9;
   }
   .mv-main{
-    opacity: 0.5;
+    opacity: .7;
+    
+    
   }
   .mv-sub {
-    position: initial;
+  
     width: 100%;
-    height: 100px;
+  
   } 
   .mv-sub2{
-    position: initial;
+   
     width: 100%;
-    height: 100px;
+    
   }
   }
   /* 茶道とは */
