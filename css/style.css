@@ -247,7 +247,7 @@ h1 {
 }
 p.explain {
   line-height: 1.5;
-  text-align:center;
+  text-align:left;
   font-family: var(--text-font-family-yumincho);
   font-style: normal;
   font-weight: normal;
@@ -551,7 +551,7 @@ p.explain {
 .tool-detail{
   justify-content: center;
   background-color: #BEB59D;
-  padding:25px 0;
+  padding:100px 0;
 }
 .tool-item {
   display: flex;
@@ -581,7 +581,7 @@ p.explain {
 .tool-header {
   max-width: 50%;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border-bottom: 1px solid var(--text-color1);
 }
 .tool-explain{
@@ -648,10 +648,12 @@ p.explain {
   grid-template-columns: 240px 240px 240px;
   grid-template-rows: 140px 140px;
   grid-gap: 80px;
-  padding: 50px 0;
+  padding: 100px 0;
   height: fit-content;
   position: relative;
-  background-color: #BEB59D;
+  /* background-color: #BEB59D; */
+  background-color:rgba(190, 181, 157, 0.5);
+  
 }
 /* アニメーション枠を作る */
 
@@ -737,18 +739,16 @@ img.content {
 .sweets-table{
   display: flex;
   background-color: #fff;
-  padding-bottom: 100px;
+ 
  
 }
 
 .table-container{
-
-
   display: grid;
   grid-template-columns:  420px 420px;
-  grid-gap:40px;
+  grid-gap:80px;
   text-align: left;
-  margin:100px auto 0;
+  margin:200px auto;
   background-color: var(--main-color2);
   animation: slideIn 1.6s;
 }
@@ -873,17 +873,18 @@ table,th,td {
 .front {
   color: #001F27;
   font-family: aoyagireisyosimo_otf;
-  font-size: 35px;
+  font-size: 44px;
   font-weight: bold;
   background:#F6F3EF;
   box-sizing: border-box;
+ 
   width: 95%;
   height: 93%;
   top:15px;
   left: 3px;
 }
 .back {
-  color:#001F27;
+  color:#FFFFFF;
   background: #919B55;
   transform: rotateY(-180deg);
   font-size: 20px;
