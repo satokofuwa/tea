@@ -213,8 +213,9 @@ body {
 
 .tea-logo {
   margin-top: 16px;
-  width: 100%;
+  width: 100px;
   height: auto;
+  object-fit: contain;
 }
 h1 { 
   position: relative;
@@ -241,7 +242,7 @@ p.explain {
   font-family: var(--text-font-family-yumincho);
   font-style: normal;
   font-weight: normal;
-  font-size: 28px;
+  font-size: 20px;
   color: var(--text-color2);
   width: 600px;
   margin-bottom: 100px;
@@ -370,6 +371,7 @@ p.explain {
 /* メインビュー */
 
 #mv-area {
+  width: 100vw;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -390,7 +392,7 @@ p.explain {
   display: flex;
   align-items: center;
   width: 60px;
-  height: 500px;
+  /* height: 500px; */
   line-height: 1.5;
   text-align: center;
   color: #001F27;
@@ -483,6 +485,7 @@ p.explain {
 }
 .about-content {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content:center;
   align-items: center;
@@ -510,6 +513,7 @@ p.explain {
   }
   p.explain {
    font-size: 16px;
+   max-width: 300px;
   }
   .about-window_img {
     max-width: 300px;
@@ -542,6 +546,7 @@ p.explain {
   height: auto;
 }
 .tool-detail{
+  width: 100%;
   justify-content: center;
   background-color: #BEB59D;
   padding:100px 0;
@@ -551,16 +556,17 @@ p.explain {
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  width: 360px;
-  padding:25px;
+  width: 250px;
+  padding:20px;
 
   background-color: var(--main-color1);
   text-align: center;
-  margin-left: 80px;
+  margin-left: 30px;
   line-height: 1.5;
 }
+
 .tool-item:nth-child(3) {
-  margin-right: 80px;
+  margin-right: 30px;
   padding:25px;
 }
 
@@ -645,6 +651,7 @@ p.explain {
   position: relative;
   /* background-color: #BEB59D; */
   background-color:rgba(190, 181, 157, 0.5);
+
   
 }
 /* アニメーション枠を作る */
@@ -727,10 +734,12 @@ img.content {
  width: 100%;
  /* background-size:contain; */
  z-index: 1;
+ 
 }
 .sweets-table{
   display: flex;
-  background-color: #fff;
+    /* background-color: #F6F3EF;  */
+
 }
 
 .table-container{
@@ -739,8 +748,10 @@ img.content {
   grid-gap:80px;
   text-align: left;
   margin:200px auto;
-  background-color: var(--main-color2);
+  /* background-color: var(--main-color2); */
   animation: slideIn 1.6s;
+  /* background-color: #F6F3EF; */
+ 
 }
 
 @keyframes slideIn {
@@ -756,7 +767,6 @@ img.content {
 
 .table-1,
 .table-2 {
-  width: 100%;
   font-size: 30px;
   margin-left:-1px;
   font-family: HannariMincho;
@@ -767,6 +777,7 @@ img.content {
   outline-offset: 1px;
   /* 外側の線と内側の線の空き具合を調整*/
   color: #001F27;
+  
 }
 table,th,td {
   padding: 0.5em;
@@ -808,13 +819,25 @@ table,th,td {
     display: grid;
     grid-template-columns: 200px 200px;
     /*幅150pxの列が２列できた */
-    grid-template-rows: 140px 140px 140px ;
-    grid-gap: 80px;
+    /* grid-template-rows: 140px 140px 140px ; */
+    /* grid-gap: 40px; */
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    align-items: center;
   }
 .table-container {
   display: grid;
-  grid-template-columns: 420px;
+  /* grid-template-columns: 420px; */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  align-items: center;
   grid-gap:40px;
+}
+ .table-1,
+ .table-2{
+  font-size: 20px;
+  min-width: 206px;
 }
 }
 .flower-red_icon,
@@ -938,4 +961,8 @@ table,th,td {
 }
 .footer-title {
   font-size: 20px;
+  color: #ffffff;
+}
+.footer-area_copy{
+  color: #ffffff;
 }
