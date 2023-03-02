@@ -159,11 +159,11 @@ body {
   font-family: "Hannari";
 }
 
-.header {
+header {
   position: fixed;
  
   width: 100%;
-  height: 100px;
+  height: 70px;
   background-color: var(--sub-color);
   z-index: 300;
   justify-content: space-between;
@@ -174,7 +174,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 70px;
   justify-content: space-between;
   align-items: center;
 }
@@ -201,7 +201,7 @@ body {
 
 .gnav-item a {
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   display: block;
   width: 200px;
   text-align: center;
@@ -212,9 +212,9 @@ body {
 }
 
 .tea-logo {
-  margin-top: 16px;
+  margin: 0 auto;
   width: 100px;
-  height: auto;
+  height: 70px;
   object-fit: contain;
 }
 h1 { 
@@ -225,8 +225,9 @@ h1 {
   /* font-family: HannariMincho; */
   font-family: aoyagireisyosimo_otf;
   font-weight: bold;
-  margin-top: 150px;
-  margin-bottom:100px;
+  /* margin-top: 150px; */
+  /* margin-bottom:100px; */
+  margin: auto 0;
   z-index:10
 }
 .flow-icon {
@@ -252,7 +253,7 @@ p.explain {
 /* ハンバーガーメニュー */
 .gnav-toggle {
   position: relative;
-  margin-top: 12px;
+  /* margin-top: 12px; */
 }
 
 .gnav-hidden {
@@ -347,6 +348,9 @@ p.explain {
 
 @media screen and (max-width: 768px) {
   
+  header{
+    height: 70px;
+  }
   .gnav-menu {
     flex-direction: column;
     justify-content: flex-start;
@@ -451,6 +455,7 @@ p.explain {
      display: flex;
      flex-direction: column;
      align-items: center;
+    
   }
   
   .sub-area {
@@ -471,6 +476,7 @@ p.explain {
   }
   .mv-sub {
     width: 100%;
+    top: 30px;
   } 
   .mv-sub2{
     width: 100%;
@@ -482,6 +488,9 @@ p.explain {
   width: 100%;
   height: auto;
   background-color: var(--accent-color1);
+}
+.about-text{
+  margin: 150px auto 100px;
 }
 .about-content {
   display: flex;
@@ -508,8 +517,9 @@ p.explain {
     align-items: center;
     width: 100%;
   }
+
   h1{
-    font-size: 30px;
+    font-size: 25px;
   }
   p.explain {
    font-size: 16px;
@@ -536,7 +546,7 @@ p.explain {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 100px;
+  padding: 100px 0;
   background:#F6F3EF;
   
 }
@@ -557,6 +567,7 @@ p.explain {
   justify-content: center;
   box-sizing: border-box;
   width: 250px;
+  height: 528px;
   padding:20px;
 
   background-color: var(--main-color1);
@@ -568,28 +579,45 @@ p.explain {
 .tool-item:nth-child(3) {
   margin-right: 30px;
   padding:25px;
+  
 }
 
 .tool-img {
   object-fit: contain;
-  margin:0 25px;
+  margin:0 auto;
   margin-bottom: 25px;
- 
+  width: 150px;
+  height: 150px;
+}
+
+img.tool-img3{
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
+  margin: 25px auto 15px;
 }
 .tool-header {
   max-width: 50%;
   margin: 0 auto;
-  margin-bottom: 30px;
+  border-bottom: 1px solid var(--text-color1);
+}
+.tool-header3{
+  max-width: 50%;
+  margin: 0px auto;
   border-bottom: 1px solid var(--text-color1);
 }
 .tool-explain{
   text-align: left;
-  padding:25px;
+  margin:25px;
+  line-height: 28px;
 }
 
 @media screen and (max-width: 768px) {
   .section-title{
-    padding: 0;
+    padding: 100px 0;
+  }
+  .flower-green_icon, .flower-green_icon2{
+    width: 60px;
   }
   .tool-detail {
     display: flex;
@@ -613,7 +641,7 @@ p.explain {
   .tool-header {
     font-size: 24px;
     text-align: center;
-    margin-bottom: 10px;
+  
   }
   .tool-title {
     top: 9%;
@@ -817,27 +845,24 @@ table,th,td {
   }
   .sweets-list {
     display: grid;
-    grid-template-columns: 200px 200px;
-    /*幅150pxの列が２列できた */
-    /* grid-template-rows: 140px 140px 140px ; */
-    /* grid-gap: 40px; */
     gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     justify-items: center;
     align-items: center;
   }
 .table-container {
   display: grid;
   /* grid-template-columns: 420px; */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
   align-items: center;
   grid-gap:40px;
+  
 }
  .table-1,
  .table-2{
   font-size: 20px;
-  min-width: 206px;
+  min-width: 300px;
 }
 }
 .flower-red_icon,
@@ -853,6 +878,7 @@ table,th,td {
   grid-gap: 100px;
   padding: 100px 0 200px;
   background: #BEB59D;
+  position: relative;
 }
 .card {
   position: relative;
@@ -895,6 +921,15 @@ table,th,td {
   height: 93%;
   top:15px;
   left: 3px;
+
+}
+.color{
+  position: absolute;
+  top: -1px;
+  width: 100%;
+  height: 30px;
+  background-color: #919B55;
+
 }
 .back {
   color:#FFFFFF;
@@ -921,16 +956,26 @@ table,th,td {
     grid-template-columns:100px 100px ;
     grid-template-rows:400px 400px; 
  }
+ img.flower-red_icon, img.flower-red_icon2{
+  width: 60px;
  }
- .pagetop{display: block;
+ }
+ /* .pagetop{display: block; 
    text-align: right;
    background-color: #BEB59D;
    width: 100%;
+   border: 2px;
+   border-color: #BEB59D;
  }
- .pagetop img{
+ */
+
+ img.pagetop{
+  display: inline;
   width: 30px;
   height: 30px;
-  margin: 10px;
+  position: absolute;
+  bottom: 10px;
+  right:10px
  }
 /* フッター */
 .footer-area {
@@ -947,7 +992,7 @@ table,th,td {
   align-items: center;
   width: 100%;
   justify-content: center;
-  padding-right: 50px;;
+  
 }
 .footer-logo_img{
  width: 100px;
