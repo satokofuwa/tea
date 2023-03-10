@@ -13,8 +13,8 @@
   --accent-color2: #8D2425;
 
   /* Font/text values */
-  --text-font-family-hannarimincho: HannariMincho;
-  --text-font-family-yumincho: YuMincho;
+  --text-font-family-hannarimincho:"Hannari";
+  
   --text-font-style-normal: normal;
   --text-font-weight-normal: normal;
   --text-font-weight-medium: medium;
@@ -53,7 +53,7 @@
 }
 
 .text {
-  font-family: var(--text-font-family-yumincho);
+  font-family: 'Noto Serif JP', serif;
   font-style: var(--text-font-style-normal);
   font-weight: var(--text-font-weight-medium);
   font-size: var(--text-font-size-12);
@@ -206,7 +206,7 @@ header {
   display: block;
   width: 200px;
   text-align: center;
-  font-family: HannariMincho;
+  font-family: "Hannari";
   font-style: normal;
   font-weight: bold;
   border-bottom: 1px ;
@@ -241,7 +241,7 @@ h1 {
 p.explain {
   line-height: 1.5;
   text-align:left;
-  font-family: var(--text-font-family-yumincho);
+  font-family: 'Noto Serif JP', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -402,7 +402,7 @@ p.explain {
   text-align: center;
   color: #001F27;
   border: dotted 1px #001F27;
-  font-family: HannariMincho;
+  font-family: "Hannari";
   /* 内側の線になる一本線の枠線をひく*/
   outline: solid 1px #001F27;
   /* 外側の線になる一本線の枠線をひく*/
@@ -722,7 +722,7 @@ img.tool-img3{
 .title {
   display:block;
   color: #000;
-  font-family:var(--text-font-family-hannarimincho);
+  font-family: "Hannari";
   text-align: center;
 }
 .title span{
@@ -799,7 +799,7 @@ img.content {
 .table-2 {
   font-size: 30px;
   margin-left:-1px;
-  font-family: HannariMincho;
+  font-family: "Hannari";
   border: dotted 1px #001F27;
   /* 内側の線になる一本線の枠線をひく*/
   outline: solid 1px #001F27;
