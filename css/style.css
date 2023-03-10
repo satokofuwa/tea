@@ -127,6 +127,7 @@ button {
 
 
 body {
+  width: ;
   font-family: 'Noto Serif JP', serif;
   color: #707070;
   font-size: 16px;
@@ -221,8 +222,9 @@ header {
 
 .tea-logo {
   margin: 0 auto;
-  width: 100px;
-  height: 70px;
+  margin-left: 30px;
+  width: 66px;
+  height: 61px;
   object-fit: contain;
 }
 h1 { 
@@ -573,7 +575,7 @@ p.explain {
 .tool-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   box-sizing: border-box;
   width: 250px;
   height: 528px;
@@ -587,14 +589,13 @@ p.explain {
 
 .tool-item:nth-child(3) {
   margin-right: 30px;
-  padding:25px;
+
   
 }
 
 .tool-img {
   object-fit: contain;
-  margin:0 auto;
-  margin-bottom: 25px;
+  margin:0 auto 25px;
   width: 150px;
   height: 150px;
 }
@@ -603,7 +604,7 @@ img.tool-img3{
   object-fit: contain;
   width: 150px;
   height: 150px;
-  margin: 25px auto 15px;
+  margin: 0 auto 25px;
 }
 .tool-header {
   max-width: 50%;
@@ -993,22 +994,18 @@ table,th,td {
   bottom:0;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: var(--accent-color1);
 }
-.footer-logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  
-}
-.footer-logo_img{
- width: 100px;
+
+
+img.footer-logo_img{
+  margin:20px 0 10px;
+ 
 }
 .footer-area_copy {
   width: 100%;
-  text-align: center;
+  
   height: 20px;
   font-size: 16px;
   background-color: #919B55;
@@ -1016,7 +1013,13 @@ table,th,td {
 .footer-title {
   font-size: 20px;
   color: #ffffff;
+  margin: 20px 0 30px;
 }
 .footer-area_copy{
   color: #ffffff;
+}
+small {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
 }
