@@ -152,10 +152,12 @@ body {
 }
 
 @font-face {
-  font-family: "aoyagireisyosimo_otf";
-  src: url('../fonts/aoyagireisyosimo_otf_2_01/aoyagireisyosimo_otf_2_01.otf') format('opentype');
   font-family: "Hannari";
   src: url('../fonts/HannariMincho-Regular.otf') format('opentype');
+}
+@font-face{
+  font-family: "aoyagireisyosimo_otf";
+  src: url('../fonts/aoyagireisyosimo_otf_2_01/aoyagireisyosimo_otf_2_01.otf') format('opentype');
 }
 
 .wf-hannari {
@@ -229,7 +231,7 @@ h1 {
   line-height: 1.5;
   color: var(--text-color2);
   /* font-family: HannariMincho; */
-  font-family: aoyagireisyosimo_otf;
+  font-family: "aoyagireisyosimo_otf";
   font-weight: bold;
   /* margin-top: 150px; */
   /* margin-bottom:100px; */
@@ -918,7 +920,7 @@ table,th,td {
 }
 .front {
   color: #001F27;
-  font-family: aoyagireisyosimo_otf;
+  font-family: "aoyagireisyosimo_otf";
   font-size: 44px;
   font-weight: bold;
   background:#F6F3EF;
