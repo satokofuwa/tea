@@ -154,6 +154,8 @@ body {
 @font-face {
   font-family: 'aoyagireisyosimo_otf';
   src: url('../fonts/aoyagireisyosimo_otf_2_01/aoyagireisyosimo_otf_2_01.otf') format('opentype');
+  font-family: 'Hannari';
+  src: url('../fonts/HannariMincho-Regular.otf') format('opentype');
 }
 
 .wf-hannari {
