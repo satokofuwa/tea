@@ -249,7 +249,7 @@ h1 {
 }
 p.explain {
   line-height: 1.5;
-  text-align:left;
+  text-align:center;
   font-family: 'Noto Serif JP', serif;
   font-style: normal;
   font-weight: normal;
@@ -257,6 +257,9 @@ p.explain {
   color: var(--text-color2);
   width: 600px;
   margin-bottom: 100px;
+  position:relative;
+  z-index:1;
+ 
 }
 
 
@@ -535,12 +538,14 @@ p.explain {
 
   /* 茶道とは */
 #about {
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-color: var(--accent-color1);
 }
 .about-text{
+  position:relative;
   margin: 150px auto 100px;
+  z-index:1;
 }
 .about-content {
   display: flex;
@@ -548,18 +553,70 @@ p.explain {
   flex-direction: column;
   justify-content:center;
   align-items: center;
+  position:relative;
+
   }
 
 .about-window {
-  max-width: 400px;
+  /* max-width: 400px; */
   max-height: 400px;
   margin-top: 100px;
+  position: relative;
 }
-.about-window_img {
+.tea-room{
+  width:  100%;
+  height: 400px;
+  
+}
+.door{
+  width:  100%;
+  height: 400px;
+  position: absolute;
+  top:0;
+ display:flex;
+ justify-content: center;
+  z-index:1;
+}
+img.door-left{
+  height: 400px;
+
+}
+img.door-right{
+  height: 400px;
+
+}
+.door-right.fadeout
+{
+  opacity: 1;
+
+}
+.door-right.fadeout.scrollout{
+  transform: translateX(1000px);
+  transition: 5s ease 2s;
+}
+
+.door-left.fadeout{
+  opacity: 1;
+ 
+}
+.door-left.fadeout.scrollout{
+  transform: translateX(-1000px);
+  transition: 5s ease 2s;
+}
+.tea-room.fadein{
+  opacity:0;
+  transition: all 500ms;
+}
+.tea-room.fadein.scrollin{
+  opacity:1;
+  transition: all 5s 2s;
+}
+/* .about-window_img { 
   max-width: 400px;
   max-height: 400px;
   margin: 0 auto;
-}
+} */
+
 @media screen and (max-width: 768px) {
   #about {
     display: flex;
@@ -574,10 +631,22 @@ p.explain {
   p.explain {
   font-family: 'Noto Serif JP', serif;
    font-size: 16px;
-   max-width: 300px;
+   max-width: 330px;
   }
   .about-window_img {
     max-width: 300px;
+  }
+  .tea-room{
+    width:  100%;
+    height: 200px;
+  }
+  img.door-left{
+    height: 200px;
+  
+  }
+  img.door-right{
+    height: 200px;
+  
   }
 
 }
@@ -717,6 +786,10 @@ img.tool-img3{
   background-color: #ffff;
   
   background-color: var(--main-color2);
+ 
+ position:relative;
+ overflow: hidden;
+ z-index: 0;
 }
 .sweets-list{
   display: grid;
@@ -729,8 +802,21 @@ img.tool-img3{
   position: relative;
   /* background-color: #BEB59D; */
   background-color:rgba(190, 181, 157, 0.5);
+ 
+ 
+}
+#sweets::before {
+  content: '';
+  background-image: url('../img/flower-icon-greeen.svg');
+  background-size: 8%;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
 
-  
+  filter: opacity(25%);
+  z-index: -1;
 }
 /* アニメーション枠を作る */
 
@@ -987,13 +1073,13 @@ table,th,td {
   transform: rotateY(-180deg);
   font-size: 20px;
   line-height: 1.5;
+
 }
 .flipped .front{
     transform: rotateY(180deg);
  }
 .flipped .back{
   transform: rotateY(0);
-  align-items: flex-start;
  }
  .flower-smred_icon2 {
   position: absolute;

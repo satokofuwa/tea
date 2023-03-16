@@ -25,3 +25,34 @@ for(let i=animation.length-1; i>=0; i--){
       }
     })
   }
+  $(function(){
+    $(window).scroll(function (){
+
+      $('.fadein').each(function(){
+        var elemPos = $(this).offset().top;
+        // 要素の高さ
+        var scroll = $(window).scrollTop();
+        // 現時点での高さ
+        var windowHeight = $(window).height();
+        // Windowの高さ
+        if (scroll > elemPos - windowHeight+100){
+          // 現時点の高さが大きい>要素の高さーwindowの高さ
+          $(this).addClass('scrollin');
+        }
+      });
+      $('.fadeout').each(function(){
+        var elemPos = $(this).offset().top;
+        // 要素の高さ
+        var scroll = $(window).scrollTop();
+        // 現時点での高さ
+        var windowHeight = $(window).height();
+        // Windowの高さ
+        if (scroll > elemPos - windowHeight+100){
+          // 現時点の高さが大きい>要素の高さーwindowの高さ
+          $(this).addClass('scrollout');
+        }
+      });
+      
+    });
+  });
+  
